@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+        /* Remove modal header and footer borders */
+        .modal-header, .modal-footer {
+            border: none;
+        }
+
+    </style>
+</head>
+<body class="">
+<!-- navbar start -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="" id="brand-name">
+            <img src="Nov 6 2024.png" alt="guildgforge logo" width="40px">
+            GuildForge</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item" id="contactbtn">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+<!-- navbar end -->
+<!-- hero section -->
+<div class="container-fluid bg-dark pt-5" id="home">
+  <div class="row p-3">
+      <p class="h1 text-lg text-center text-light fs-1 lh-sm" id="brand-name"><b><span id="heroem" class="text-primary">Simplifying</span><br>Community Building</b></p>
+      <p class="text-center text-light opacity-75 fs-5 lh-sm" id="herotext">Effortlessly build your community<br>with our expert-driven, streamlined solutions.</p>
+      <div class="text-center">
+          <a href="#contact" class="btn btn-primary btn-lg" id="herobtn"><b>Get in Touch</b></a>
+      </div>
+  </div>
+</div>
+<!-- hero section end -->
+<!-- services section start -->
+    <div class="container-fluid px-4 py-3 pt-5 bg-dark text-light" id="services">
+        <h2 class="pb-2 text-center fs-1 w-75 mx-auto pt-5"><b>Services</b></h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 w-75 mx-auto">
+            <div class="feature col border-bottom pb-3">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="services.png" width="30em" height="30em" alt="">
+                </div>
+                <h3 class="fs-2 text-light">Building</h3>
+                <p>Let us build a custom Discord server that delivers an exceptional experience for your audience. We'll work closely with you to tailor the design to your exact needs, creating a sleek, professional server that perfectly represents your brand</p>
+            </div>
+            <div class="feature col border-bottom pb-3">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+                    <img src="management.png" width="30em" height="em" alt>
+                </div>
+                <h3 class="fs-2 text-light">Management</h3>
+                <p>We offer expert community management and moderation to keep your Discord server safe and active. From enforcing rules to moderating chats and resolving conflicts, we ensure your community runs smoothly and stays engaged.</p>
+            </div>
+            <div class="feature col border-bottom pb-3">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="consulting.png" width="30em" height="30em">
+                </div>
+                <h3 class="fs-2 text-light">Consulting</h3>
+                <p>Our expert consulting services provide tailored guidance to boost your server's performance. We'll help you refine your strategy, attract and retain members, and use data-driven insights for continuous improvement.</p>
+            </div>
+        </div>
+    </div>
+<!-- services section end -->
+<!-- pricing section start -->
+    <div class="container-fluid bg-dark pt-5" id="pricing">
+        <p class="text-center text-light fs-1 lh-sm pt-3"><b>Pricing</b></p>
+        <p class="text-center text-light opacity-75 pb-3 fs-6 lh-sm w-50 mx-auto">Choose the perfect package for your community, from server setup to full moderation. Get the support you need to make your Discord server.</p>
+        <main>
+            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center w-75 mx-auto">
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Basic</h4>
+                        </div>
+                        <div class="card-body bg-dark text-light rounded-bottom-2">
+                            <h1 class="card-title pricing-card-title">$15</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Channels & Roles set-up</li>
+                                <li>Moderation Bots</li>
+                                <li>Reaction Roles</li>
+                                <li>1 week Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Standard</h4>
+                        </div>
+                        <div class="card-body bg-dark text-light rounded-bottom-2">
+                            <h1 class="card-title pricing-card-title">$30</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Levelling bots set-up</li>
+                                <li>Advanced permission handling</li>
+                                <li>Button & Drop-down roles</li>
+                                <li>2 weeks Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                        <div class="card-header py-3 text-bg-primary border-primary">
+                            <h4 class="my-0 fw-normal">Premium</h4>
+                        </div>
+                        <div class="card-body bg-dark text-light rounded-bottom-2">
+                            <h1 class="card-title pricing-card-title">$50</h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Onboarding</li>
+                                <li>Automoderation</li>
+                                <li>Advanced Bots</li>
+                                <li>4 weeks Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center text-light opacity-75 fs-6 lh-sm w-50 mx-auto"> Compare plans to get the detailed list of features</p>
+            <h3 class="text-center pb-5">
+                <a class="btn btn-primary fs-5" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <b>Compare Plans</b>
+                </a>
+            </h3>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body bg-dark w-75 mx-auto"> 
+                    <div class="table-responsive  w-100 mx-auto">
+                        <table class="table text-center">
+                            <thead>
+                                <tr>
+                                    <th class="bg-dark text-light" style="width: 40%;">Features</th>
+                                    <th class="bg-dark text-light" style="width: 20%;">Basic</th>
+                                    <th class="bg-dark text-light" style="width: 20%;">Standard</th>
+                                    <th class="bg-dark text-light" style="width: 20%;">Premium</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Channels & Roles set-up</th>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Moderation Bots</th>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Minigame Bots</th>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Social Media Notifications</th>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Reaction Roles</th>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                   <th class="bg-dark text-light text-start" scope="row" class="text-start">Levelling Bots</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Advanced Permission Handling</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Activity Tracking</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                   <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Ticket System</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Button & Drop-down Roles</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Onboarding</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Discord's Automod</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Advanced Logging</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Economy Bots</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Welcome Embed Menu set-up</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Adapting to new Features</th>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"></td>
+                                    <td class="bg-dark text-light"><img src="checkmark.png" alt="" width="20em"></td>
+                                </tr>
+                                <tr>
+                                    <th class="bg-dark text-light text-start" scope="row" class="text-start">Revisions</th>
+                                    <td class="bg-dark text-light">1 Week</td>
+                                    <td class="bg-dark text-light">2 Weeks</td>
+                                    <td class="bg-dark text-light">4 Weeks</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>        
+            </div>
+        </main>
+<!-- pricing section end --> 
+<!-- contact section start -->
+<div class="container py-5 w-75 mx-auto" id="contact">
+    <p class="text-center text-light fs-1 lh-sm pt-3"><b>Contact Us</b></p>
+    <form id="contactForm" action="https://formspree.io/f/mdkozyzb" method="POST">
+        <div class="row mb-3" id="contactform">
+            <!-- Name Field (Horizontal on large screens, stacked on small screens) -->
+            <div class="col-md-6 col-sm-12">
+              <div class="input-group mb-1">
+                <span class="input-group-text bg-secondary text-light" id="basic-addon1">Name</span>
+                <input type="text" name="name" id="name" class="form-control bg-dark text-light" placeholder="Enter your name" aria-label="Name" aria-describedby="basic-addon1">
+              </div>
+              <div id="nameError" class="error"></div>
+            </div>
+    
+            <!-- Email Field (Horizontal on large screens, stacked on small screens) -->
+            <div class="col-md-6 col-sm-12">
+              <div class="input-group mb-1">
+                <span class="input-group-text bg-secondary text-light" id="basic-addon2">Email</span>
+                <input type="email" name="email" id="email" class="form-control bg-dark text-light" placeholder="name@example.com" aria-label="Email" aria-describedby="basic-addon2">
+              </div>
+              <div id="emailError" class="error"></div>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="message" class="form-label text-light">Message:</label>
+            <textarea name="message" class="form-control bg-dark text-light" id="message" rows="3" placeholder="Tell us more about your project"></textarea>
+            <div id="messageError" class="error"></div>
+        </div>
+
+        <div class="text-center pt-4">
+            <button type="submit" class="btn btn-primary btn-lg text-center" id="messagesend"><b>Send</b></button>
+        </div>
+    </form>
+</div>
+
+<!-- Modal HTML -->
+<div class="modal fade" id="submitModal" tabindex="-1" aria-labelledby="submitModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5 class="modal-title" id="submitModalLabel">Message Sent!</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thank you for your submission. We will get back to you shortly.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact section end --> 
+
+<!-- footer section start -->
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Left Column: Brand Info and Button, Logo on the Left -->
+        <div class="col-md-6 mb-3">
+          <div class="d-flex flex-row align-items-center">
+            <!-- Left Side: Logo -->
+            <div>
+              <img src="Nov 6 2024.png" alt="Logo" class="" style="width: 100px;"> <!-- Logo aligned to the left -->
+            </div>
+  
+            <!-- Right Side: Brand Name, Tagline, and Button -->
+            <div class="d-flex flex-column ms-3">
+              <h3 class="h4 mb-0" id="brand-name">GuildForge</h3> <!-- Replace with your brand name -->
+              <p class="mb-2" id="brand-name"><b><span class="text-primary">Simplifying</span> Community Building</b></p> <!-- Replace with your tagline -->
+              <a href="https://discord.com/invite/AFGcm5UPJ6" id="brand-name" target="_blank" class="btn btn-primary">Join Our Discord</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Right Column: Link Lists -->
+        <div class="col-md-6">
+          <div class="row">
+            <!-- Social Links -->
+            <div class="col-4 footer-links">
+              <h5>Social</h5>
+              <ul class="list-unstyled">
+                <li><a href="https://x.com/guildforge_" target="_blank" class="text-light"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://instagram.com/guildforge" target="_blank" class="text-light"><i class="fab fa-instagram"></i> Instagram</a></li>
+              </ul>
+            </div>
+  
+            <!-- About and Team -->
+            <div class="col-4 footer-links">
+              <h5>Company</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#aboutUsModal">About Us</a></li> <!-- About Us link triggers the modal -->
+                <li><a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#teamModal">The Team</a></li>
+                <li><a href="#" class="text-light" data-bs-toggle="modal" data-bs-target="#faqModal">FAQ</a></li> <!-- The Team link triggers the modal -->
+              </ul>
+            </div>
+  
+            <!-- Email -->
+            <div class="col-4 footer-links">
+              <h5>Contact</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="mailto:guildforge.discord@gmail.com" class="text-light">
+                    <i class="fas fa-envelope"></i> Email
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal for About Us -->
+  <div class="modal fade" id="aboutUsModal" tabindex="-1" aria-labelledby="aboutUsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"> <!-- Centering the modal -->
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutUsModalLabel">About Us</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Replace this text with your actual content -->
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vehicula purus vitae purus vestibulum efficitur.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Modal for The Team -->
+<div class="modal fade" id="teamModal" tabindex="-1" aria-labelledby="teamModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+          <div class="modal-header">
+              <h5 class="modal-title" id="teamModalLabel">The Team</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>Meet the team behind our community-building services. We are dedicated to providing expert support and innovation to grow your Discord community.</p>
+              <!-- Card with Blazing and Founder -->
+              <div class="card w-100 bg-dark text-light mb-3">
+                  <div class="card-body d-flex align-items-center justify-content-between"> <!-- Use flexbox here -->
+                      <!-- Left Section: Avatar Image and Text -->
+                      <div class="d-flex align-items-center">
+                          <img src="https://cdn.discordapp.com/attachments/1104943626632564736/1306877870341099560/Dune_Avatar_low_res.png?ex=673995dc&is=6738445c&hm=6dfcfeeb5cde52085c7591a178aa3610d3f5a7d7c5cfb59cda3233f966140b60&" alt="Avatar Image" class="avatar-profile rounded-circle" style="width: 50px; height: 50px; margin-right: 10px;">
+                          <div>
+                              <h5 class="card-title mb-0">Blazing</h5>
+                              <p class="card-text mb-0">Founder</p>
+                          </div>
+                      </div>
+
+                      <!-- Right Section: Button -->
+                      <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal">View Profile</a>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Profile Modal -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light">
+          <!-- Banner Image -->
+          <img src="https://cdn.discordapp.com/attachments/1104943626632564736/1295800105365934141/rdrgreen.png?ex=67397ea3&is=67382d23&hm=e81e24548a11357a995b126a7176cd880f1f3283bc6ece9773f9bbba73970334&" alt="Banner Image" class="banner-image">
+          
+          <!-- Social Media Links (Aligned to the right) -->
+          <div class="social-links">
+              <a href="https://x.com/theblazinggolem" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://instagram.com/theblazinggolem" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+
+          <!-- Profile Content -->
+          <div class="p-3">
+              <!-- Avatar Section -->
+              <div class="avatar-section">
+                  <img src="https://cdn.discordapp.com/attachments/1104943626632564736/1306877870341099560/Dune_Avatar_low_res.png?ex=673995dc&is=6738445c&hm=6dfcfeeb5cde52085c7591a178aa3610d3f5a7d7c5cfb59cda3233f966140b60&" alt="Avatar Image" class="avatar-image rounded-circle">
+                  <div class="avatar-text">Blazing</div>
+                  <div class="avatar-subtext">@theblazinggolem</div>
+              </div>
+
+              <!-- Bio Section -->
+              <div class="mt-3">
+                  <p>Hey there! I'm Blazing. I'm a community architect on Discord and have worked with several content creators and brands over the years. I'm passionate about creating exciting and engaging communities on Discord.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- profile modal ends -->
+  <!-- Modal for FAQ -->
+  <div class="modal fade" id="faqModal" tabindex="-1" aria-labelledby="faqModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"> <!-- Centering the modal -->
+      <div class="modal-content bg-dark text-light">
+        <div class="modal-header">
+          <h5 class="modal-title" id="faqModalLabel">FAQ</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Replace this text with your actual content -->
+          <p>Have questions? We've got answers. Check out our frequently asked questions.</p>
+          <div class="accordion w-100 mx-auto" id="accordionExample">
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header">
+                <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <b>1. What services do you offer for building and managing a Discord community?</b>
+                </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We offer a full range of services, from server setup and customization to community management and moderation. We also help with integrating bots, tools, and features tailored to your needs, ensuring your server runs smoothly and efficiently.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <b>2. How can you help me customize the server to reflect my brand?</b>
+                </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    We'll work closely with you to design a server that aligns with your brand's identity, from visual elements to channel organization and roles. Our goal is to create a professional and polished space that resonates with your audience.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <b>3. How long does it take to set up a fully functional server?</b>
+                </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                    The setup time depends on the complexity of your needs. Typically, a basic server takes about 3 days, while more advanced setups with custom features may take up to a week.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <b>4. How do you ensure the safety and moderation of the server?</b>
+                </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We implement robust moderation tools and practices to keep your community safe, including setting clear rules, automating moderation with bots, and providing real-time support for issues like spam, harassment, and disputes.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-dark text-light">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <b>4. How do you ensure the safety and moderation of the server?</b>
+                </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        We implement robust moderation tools and practices to keep your community safe, including setting clear rules, automating moderation with bots, and providing real-time support for issues like spam, harassment, and disputes.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- footer section end -->
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

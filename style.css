@@ -1,0 +1,85 @@
+#accordionExample{
+    background-color: inherit;
+}
+@font-face {
+    font-family: 'decotura';
+    src: url(GintoNord.otf) format('truetype');
+}
+#brand-name{
+    font-family: 'decotura';
+}
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+/* Remove modal header and footer borders */
+.modal-header, .modal-footer {
+    border: none;
+}
+    /* Remove text decoration and set initial opacity */
+.footer-links a {
+    text-decoration: none;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+.footer-links a:hover {
+    opacity: 1;
+}
+    /* Custom Styling */
+.modal-content {
+    max-width: 450px; /* Control modal width */
+    margin: auto; /* Center modal horizontally */      }
+  
+      .banner-image {
+        width: 100%; /* Full width relative to modal */
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        height: 150px; /* Set height */
+        object-fit: cover; /* Preserve image aspect ratio */
+      }
+  
+      .avatar-profile {
+        width: 80px;
+        height: 80px;
+        margin-top: 0px;
+      }
+      .avatar-image {
+        width: 80px;
+        height: 80px;
+        margin-top: -45px;
+      }
+  
+      .avatar-section { /* Center avatar and text below */
+        margin-top: -55px; /* Move avatar upward slightly */
+      }
+  
+      .avatar-text {
+        margin-top: 10px; /* Space between avatar and text */
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+  
+      .avatar-subtext {
+        font-size: 0.9rem;
+        opacity: 0.6; /* Reduce opacity for subtext */
+      }
+  
+      .social-links {
+        display: flex;
+        justify-content: flex-end; /* Align social links to the right */
+        gap: 15px; /* Add spacing between links */
+        margin-top: 10px;
+        padding-right: 20px;
+      }
+  
+      .social-links a {
+        color: white;
+        opacity: 0.8; /* Default opacity 90% */
+        font-size: 1.5rem;
+        transition: opacity 0.3s; /* Smooth transition */
+      }
+  
+      .social-links a:hover {
+        opacity: 1; /* Full opacity on hover */
+      }
